@@ -11,7 +11,6 @@
 
 # Output: false
 
-from typing import List
 
 from typing import List  # Import List type for type hinting
 

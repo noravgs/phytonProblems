@@ -22,3 +22,11 @@ class Solution:  # Define a class named Solution
                 return True  # If it is, return True because a duplicate is found
             seen.add(num)  # If it isn't, add the current number to the seen set
         return False  # If the loop completes without finding duplicates, return False
+
+# def duplicate_finder (nums):
+# seen = set()
+# for num in nums:
+# if num in seen:
+# return True
+# seen.add(num)
+# return False

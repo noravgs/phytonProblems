@@ -18,3 +18,9 @@ from collections import Counter  # Import Counter class for counting character o
 class Solution:  # Define a class named Solution
     def isAnagram(self, s: str, t: str) -> bool:  # Define a method named isAnagram that takes two strings and returns a boolean
         return Counter(s) == Counter(t)  # Compare the character counts of both strings using Counter
+
+#refactored solution
+from collections import Counter
+
+def isAnagram(s: str, t: str) -> bool:
+    return Counter(s) == Counter(t)

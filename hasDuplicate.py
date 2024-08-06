@@ -30,3 +30,13 @@ class Solution:  # Define a class named Solution
 # return True
 # seen.add(num)
 # return False
+
+from typing import List
+
+def hasDuplicate(nums: List[int]) -> bool:
+    seen = set()
+    for num in nums:
+        if num in seen:
+            return True
+        seen.add(num)
+    return False

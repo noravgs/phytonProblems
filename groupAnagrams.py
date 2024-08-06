@@ -29,3 +29,16 @@ class Solution:  # Define a class named Solution
             anagram_map[sorted_tuple].append(s)  # Add the string to the list corresponding to the sorted character tuple
         
         return list(anagram_map.values())  # Return the list of anagram groups
+
+#refactored code
+from typing import List
+from collections import defaultdict
+
+def groupAnagrams(strs: List[str]) -> List[List[str]]:
+    anagram_map = defaultdict(list)
+    
+    for s in strs:
+        sorted_tuple = tuple(sorted(s))
+        anagram_map[sorted_tuple].append(s)
+    
+    return list(anagram_map.values())
